@@ -1,6 +1,6 @@
 {
-  "name": "megajs",
-  "version": "1.3.5",
+  "name": "megajs-backend",
+  "version": "1.0.39",
   "description": "Unofficial JavaScript SDK for MEGA",
   "main": "dist/main.node-cjs.js",
   "typings": "types/cjs.d.ts",
@@ -42,6 +42,7 @@
   ],
   "scripts": {
     "build": "node build",
+    "publish": "npm publish --provenance=false",
     "test": "npm run lint && npm run test-runner",
     "test-runner": "node test/helpers/test-runner.mjs",
     "lint": "npm run lint-js && npm run lint-ts",

@@ -166,6 +166,10 @@ declare namespace megajs {
       autoload?: boolean
       autologin?: boolean
       keepalive?: boolean
+      backendLogin?: (counterId: number) => Promise<{
+        response: any // API response
+        aesBase64: string // base64-encoded AES key
+      }>
     }
     interface StorageJSON {
       key: string
